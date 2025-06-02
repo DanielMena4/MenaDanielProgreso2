@@ -11,10 +11,9 @@
                        FontSize="40"/>
                 <Label x:Name="PunchlineLabel"
                        FontSize="40"/>
+                <Button Text="Otro chiste"
+                       Clicked="Button_Clicked"/>
             </VerticalStackLayout>
         </ScrollView>
-        <Button Text="Otro Chiste"
-                Clicked="Button_Clicked"
-                AbsoluteLayout.LayoutBounds="0.5,1"/>
     </AbsoluteLayout>
 </ContentPage>
