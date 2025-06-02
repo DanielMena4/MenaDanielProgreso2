@@ -11,7 +11,7 @@ namespace MenaDanielProgreso2
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new Joke());
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)
