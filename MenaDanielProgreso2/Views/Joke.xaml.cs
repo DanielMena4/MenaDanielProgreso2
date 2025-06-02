@@ -15,7 +15,7 @@ public partial class Joke : ContentPage
         _jokeService = new JokeService(httpClient);
         LoadJoke();
     }
-    private async void LoadJoke()
+    private async Task LoadJoke()
     {
         try
         {
@@ -27,5 +27,10 @@ public partial class Joke : ContentPage
         {
             SetupLabel.Text = $"Error fetching joke: {ex.Message}";
         }
+    }
+
+    private async void Button_Clicked(object sender, EventArgs e)
+    {
+        await LoadJoke();
     }
 }

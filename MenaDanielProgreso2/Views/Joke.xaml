@@ -8,10 +8,13 @@
                     AbsoluteLayout.LayoutFlags="All">
             <VerticalStackLayout Padding="5" Spacing="15">
                 <Label x:Name="SetupLabel"
-                       Text="{Binding Setup}"/>
+                       FontSize="40"/>
                 <Label x:Name="PunchlineLabel"
-                    Text="{Binding PunchLine}"/>
+                       FontSize="40"/>
             </VerticalStackLayout>
-        </ScrollView>    
+        </ScrollView>
+        <Button Text="Otro Chiste"
+                Clicked="Button_Clicked"
+                AbsoluteLayout.LayoutBounds="0.5,1"/>
     </AbsoluteLayout>
 </ContentPage>
